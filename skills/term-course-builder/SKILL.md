@@ -1,11 +1,11 @@
 ---
 name: term-course-builder
-description: Create or extend modular teaching modules for generative AI terms using a repeatable editorial system. Use when the user asks to build a course/module for a concept such as skills, agents, evals, memory, context engineering, workflows, tools, RAG, prompts, or similar terms; when they ask to analyze sources and turn them into fundamentos, syllabus, lecciones, checklists, or evals; or when they want the same multi-agent research, professor review, and lesson-writing process repeated for a new term.
+description: Create or extend modular teaching modules for generative AI terms using a repeatable editorial system with subagents when available. Use when the user asks to build a course/module for a concept such as skills, agents, evals, memory, context engineering, workflows, tools, RAG, prompts, or similar terms; when they ask to analyze sources and turn them into fundamentos, syllabus, lecciones, checklists, or evals; when they request subagents, delegated source analysis, an expert professor review, a course writer, or a professor validator; or when they want the same multi-agent research and lesson-writing process repeated for a new term.
 ---
 
 # Term Course Builder
 
-Use this skill to turn scattered sources into a coherent teaching module under `doc/modulos/<term>/`.
+Use this skill to turn scattered sources into a coherent teaching module under `doc/modulos/<term>/`, using subagents for independent source analysis and validation when the user requests that workflow and subagent tools are available.
 
 Core principle: do not create disconnected notes or loose templates. Build a human learning process: sources -> concept -> scope -> use cases -> worked example -> resources -> evals -> iteration.
 
@@ -26,7 +26,7 @@ doc/modulos/<term>/
 +-- 03-lecciones.md
 ```
 
-3. Analyze each source separately before synthesizing. Use `references/source-analysis-rubric.md`.
+3. Analyze each source separately before synthesizing. Use `references/source-analysis-rubric.md`. Source analyses must read the source on its own terms and end with `## Implicaciones para nuestro curso`; do not map the source to module files during this phase.
 4. Synthesize as a professor/editor after source analysis. Use `references/professor-review-rubric.md`.
 5. Write `01-fundamentos.md` before syllabus or lessons. Explain what the term is, where it lives in a system, its components, required/optional parts, vocabulary, and common mistakes.
 6. Write `02-syllabus.md` as learning blocks. Every block must answer: what we are doing, why it matters, example, template, and deliverable.
@@ -38,7 +38,7 @@ doc/modulos/<term>/
 
 If subagents or multi-agent tools are available, use them for separation of judgment:
 
-- Source agents: one independent pass per major source. Ask for analysis, not course writing.
+- Source agents: one independent pass per major source. Ask for source analysis, not course writing and not file-by-file curriculum mapping.
 - Professor agent: review source analyses and define the pedagogical thesis, module scope, and syllabus logic.
 - Writer agent: draft lessons from the professor plan and source analyses.
 - Professor validator: review the final module for coherence, missing theory, weak scope, loose templates, and eval gaps.

@@ -34,8 +34,9 @@ Each source analysis must include:
 - Thesis of the source.
 - Useful ideas for the course.
 - Risks or misunderstandings.
-- Pedagogical decisions extracted from the source.
-- Where the source informs the module.
+- Design principles extracted from the source.
+- Risks, misunderstandings, and limits.
+- A final `## Implicaciones para nuestro curso` section, without file-by-file mapping.
 
 ### 01-fundamentos.md
 

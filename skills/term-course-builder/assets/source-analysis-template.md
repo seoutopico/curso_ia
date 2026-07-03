@@ -1,29 +1,34 @@
 # Analisis de fuente: <nombre de la fuente>
 
-## Identidad de la fuente
-
-- Tipo:
-- Por que importa:
-
-## Tesis
+## Lectura central
 
 ...
 
-## Ideas utiles para el curso
+## Tesis de la fuente
+
+...
+
+## Conceptos y distinciones importantes
 
 - ...
 
-## Riesgos o malentendidos
+## Principios de diseno
 
 - ...
 
-## Decisiones pedagogicas
+## Riesgos y malentendidos
 
 - ...
 
-## Donde se usa en el modulo
+## Limites de la fuente
 
-- `01-fundamentos.md`:
-- `02-syllabus.md`:
-- `03-lecciones.md`:
-- checklist/evals:
+- ...
+
+## Implicaciones para nuestro curso
+
+- Idea fuerza que aporta esta fuente:
+- Conceptos que deben aparecer pronto:
+- Conceptos que deben aparecer mas tarde:
+- Conceptos que conviene excluir o retrasar:
+- Tipo de ejemplo didactico que sugiere:
+- Evals o checks minimos que sugiere:
