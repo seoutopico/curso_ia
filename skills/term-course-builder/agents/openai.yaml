@@ -1,0 +1,4 @@
+interface:
+  display_name: "Term Course Builder"
+  short_description: "Create modular AI term courses"
+  default_prompt: "Use $term-course-builder to create a modular course for a new generative AI term."
